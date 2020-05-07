@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="topnavToggle">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li class="topnav-right"><a href="signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin">Sing In</a></li>
+                <li class="toggleMenu"><a href="javascript:void(0)" onclick="toggleMenu()">	
+                    &#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="container" id="section-1-gradiant">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col">
+                        <h1 class="large">Crazy radness</h1>
+                        <h1 class="large">Made for developers</h1>
+                    </div>
+                    <form action="">
+                        <div class="leftSide-col">
+                            <h2>User name</h2>
+                            <input type="text" class="usernameBox" type="text" placeholder="Enter your user name">
+                            <h2>Password</h2>
+                            <input type="text" class="passwordBox" type="password" placeholder="Enter your password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <div class="videoContainer">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LdvaroI_8mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <h1 class="section2Header">How can we help you?</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div>
+                            <img src="img/section-icon.jpg" alt="icon">
+                        </div>
+                        <label for="">Chat with me</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div>
+                            <img src="img/section-icon.jpg" alt="icon">
+                        </div>
+                        <label for="">Learn to Code</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div>
+                            <img src="img/section-icon.jpg" alt="icon">
+                        </div>
+                        <label for="">Build an Empire</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnMore">Learn More</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="sectionImg">
+                        <img src="img/section-left.jpg" alt="" width="400px"  >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleMenu(){
+                var btn = document.getElementById("topnavToggle");
+                if(btn.className === ("topnav")){
+                    btn.className += " clickable";
+                }else {
+                    btn.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
